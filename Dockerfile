@@ -8,6 +8,7 @@ COPY . .
 RUN npm install
 
 #EXPOSE 8080
+RUN cd /usr/src/app/src
 EXPOSE 3000
 #CMD [ "node", "server.js" ]
 CMD [ "node", "index.js" ]
